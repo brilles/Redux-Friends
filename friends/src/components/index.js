@@ -1,2 +1,2 @@
 export { default as Friend } from "./Friend";
-export { default as FriendsList } from "./FriendsList";
+export { default as ProtectedFriendsList } from "./ProtectedFriendsList";
