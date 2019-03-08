@@ -3,6 +3,7 @@ import "./styles/App.css";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Login from "./components/Login";
 import PrivateRoute from "./components/PrivateRoute";
+
 import FriendListView from "./views/FriendListView";
 
 class App extends Component {

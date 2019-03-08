@@ -21,7 +21,7 @@ export const getFriends = () => dispatch => {
       headers: { Authorization: localStorage.getItem("token") }
     })
     .then(res => {
-      console.log(res.data);
+      dispatch({ type: "FETCH_FRIENDS_SUCCESS", payload: res.data });
     })
     .catch(err => {
       console.log(err);

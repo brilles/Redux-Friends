@@ -1,14 +1,13 @@
 import React from "react";
 import { connect } from "react-redux";
 import { getFriends } from "../actions";
-import { ProtectedFriendsList } from "../components/ProtectedFriendsList";
+import ProtectedFriendsList from "../components/ProtectedFriendsList";
 
 class FriendListView extends React.Component {
   componentDidMount() {
     this.props.getFriends();
   }
   render() {
-    console.log("props from FLV", this.props);
     return (
       <div className="FriendsList_wrapper">
         <ProtectedFriendsList friends={this.props.friends} />

@@ -2,7 +2,6 @@ import React from "react";
 import Friend from "./Friend";
 
 const ProtectedFriendsList = props => {
-  console.log(props);
   return (
     <ul>
       {props.friends.map(friend => {
